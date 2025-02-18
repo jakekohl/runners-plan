@@ -1,0 +1,56 @@
+{
+  "name": "runners-plan",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "Web app meant to help runners create training plans",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite",
+    "dev:doppler": "doppler run -- npm run dev",
+    "vercel:dev": "vercel dev",
+    "vercel:doppler": "doppler run -- npm run vercel:dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test:unit": "vitest",
+    "lint": "eslint . --fix",
+    "format": "prettier --write src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakekohl/runners-plan.git"
+  },
+  "author": "Jacob Kohl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jakekohl/runners-plan/issues"
+  },
+  "engines": {
+    "node": "22.x",
+    "npm": "10.x"
+  },
+  "dependencies": {
+    "@primevue/themes": "^4.2.5",
+    "@vercel/functions": "^2.0.0",
+    "doppler": "^1.0.0",
+    "jsdom": "^26.0.0",
+    "pinia": "^3.0.1",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.2.5",
+    "vercel": "^41.1.4",
+    "vue": "^3.5.13",
+    "vue-ripple-directive": "^2.0.1",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/eslint-config-prettier": "^10.1.0",
+    "eslint": "^9.18.0",
+    "eslint-plugin-chai-friendly": "^1.0.1",
+    "eslint-plugin-vue": "^9.32.0",
+    "prettier": "^3.4.2",
+    "vite": "^6.0.11",
+    "vite-plugin-vue-devtools": "^7.7.0"
+  }
+}
